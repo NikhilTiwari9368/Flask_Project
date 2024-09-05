@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cloud Template - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Practice Flask</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -20,7 +20,7 @@
     <!-- Your HTML content here -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="{{ url_for('index') }}">Cloud Template</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">Practice Flask</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -32,6 +32,7 @@
             <li class="nav-item"><a class="nav-link" href="{{ url_for('leadership') }}">Leadership</a></li>
             <li class="nav-item"><a href="{{ url_for('blog') }}" class="nav-link">Blog</a></li>
             <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+			<li class="nav-item"><a href="{{ url_for('login') }}" class="nav-link">login</a></li>
             <li class="nav-item cta"><a href="#" class="nav-link"><span>Get started</span></a></li>
           </ul>
         </div>
@@ -48,9 +49,9 @@
 	      	<img class="one-third js-fullheight align-self-end order-md-first img-fluid" src="{{ url_for('static',filename= 'images/undraw_co-working_825n.svg') }}" alt="">
 	        <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
 	        	<div class="text mt-5">
-	        		<span class="subheading">Cloud Template</span>
-	            <h1 class="mb-3"><span>Cloud,</span> <span>Management,</span> <span>Template</span></h1>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+	        		<span class="subheading">Practice Flask</span>
+	            <h1 class="mb-3"><span>Learn</span> <span>Something</span> <span>New</span></h1>
+				<p>In today’s rapidly evolving digital landscape, businesses and individuals alike need reliable and innovative solutions to stay ahead. Our comprehensive range of services is designed to meet the diverse needs of modern enterprises and educational institutions. </p>
 	            <p><a href="#" class="btn btn-secondary px-4 py-3">Get in touch</a></p>
 	          </div>
 	        </div>
@@ -81,158 +82,195 @@
     </section>
     
 
-    <section class="ftco-section services-section bg-light">
-      <div class="container">
-      	<div class="row justify-content-center mb-5">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-3">Cloud Services</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-cloud"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">Cloud databases</h3>
-                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-server"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">Website Hosting</h3>
-                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-customer-service"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">File Storage</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-					<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-life-insurance"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">Forex Trading</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-cloud-computing"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">File Backups</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-flex">
-            	<div class="icon d-flex align-items-center justify-content-center">
-            		<span class="flaticon-settings"></span>
-            	</div>
-              <div class="media-body pl-4">
-                <h3 class="heading">Remote Desktop</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-        </div>
-      </div>
-    </section>
+	<section class="ftco-section services-section bg-light">
+		<div class="container">
+		  <div class="row justify-content-center mb-5">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+			  <h2 class="mb-3">Services</h2>
+			</div>
+		  </div>
+		  <div class="row">
+			<!-- Existing Services -->
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-cloud"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Cloud Databases</h3>
+				  <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>      
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-server"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Website Hosting</h3>
+				  <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>    
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-customer-service"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">File Storage</h3>
+				  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>      
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-life-insurance"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Forex Trading</h3>
+				  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>      
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-cloud-computing"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">File Backups</h3>
+				  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>    
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-settings"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Remote Desktop</h3>
+				  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+				</div>
+			  </div>      
+			</div>
+			<!-- New Study-Related Services -->
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-books"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Online Courses</h3>
+				  <p>Access a wide range of online courses from leading educational platforms to enhance your skills and knowledge.</p>
+				</div>
+			  </div>      
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-laptop"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">E-Learning Solutions</h3>
+				  <p>Customized e-learning solutions to create engaging and interactive educational content for students and professionals.</p>
+				</div>
+			  </div>      
+			</div>
+			<div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+			  <div class="media block-6 services d-flex">
+				<div class="icon d-flex align-items-center justify-content-center">
+				  <span class="flaticon-study"></span>
+				</div>
+				<div class="media-body pl-4">
+				  <h3 class="heading">Virtual Classrooms</h3>
+				  <p>Set up and manage virtual classrooms for seamless remote learning experiences with interactive tools and resources.</p>
+				</div>
+			  </div>      
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
-
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-3">What Our Software Can Do For You</h2>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-lg-6 py-5 d-flex align-items-center">
-    				<img src="{{ url_for('static',filename= 'images/undraw_referral_4ki4.svg') }}" class="img-fluid" alt="">
-    			</div>
-    			<div class="col-lg-6 py-5">
-    				<div class="row">
-    					<div class="col-md-12 ftco-animate d-flex">
-    						<div class="media block-6 services border d-flex p-3 mb-3">
-		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
-		            		<span class="flaticon-cloud-computing"></span>
-		            	</div>
-		              <div class="media-body pl-4">
-		                <h3 class="heading">Resposive Design</h3>
-		                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts</p>
-		              </div>
-		            </div>
-    					</div>
-    					<div class="col-md-12 ftco-animate d-flex">
-    						<div class="media block-6 services border d-flex p-3 mb-3">
-		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
-		            		<span class="flaticon-cloud"></span>
-		            	</div>
-		              <div class="media-body pl-4">
-		                <h3 class="heading">Andriod Apps Development</h3>
-		                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts</p>
-		              </div>
-		            </div>
-    					</div>
-    					<div class="col-md-12 ftco-animate d-flex">
-    						<div class="media block-6 services border d-flex p-3 mb-3">
-		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
-		            		<span class="flaticon-server"></span>
-		            	</div>
-		              <div class="media-body pl-4">
-		                <h3 class="heading">iOs Apps Development</h3>
-		                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts</p>
-		              </div>
-		            </div>
-    					</div>
-    					<div class="col-md-12 ftco-animate d-flex">
-    						<div class="media block-6 services border d-flex p-3 mb-3">
-		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
-		            		<span class="flaticon-database"></span>
-		            	</div>
-		              <div class="media-body pl-4">
-		                <h3 class="heading">UX/UI Design</h3>
-		                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts</p>
-		              </div>
-		            </div>
-    					</div>
-    					<div class="col-md-12 ftco-animate d-flex">
-    						<div class="media block-6 services border d-flex p-3 mb-3">
-		            	<div class="icon icon-2 d-flex align-items-center justify-content-center">
-		            		<span class="flaticon-database"></span>
-		            	</div>
-		              <div class="media-body pl-4">
-		                <h3 class="heading">Print Ready Design</h3>
-		                <p class="mb-0">Even the all-powerful Pointing has no control about the blind texts</p>
-		              </div>
-		            </div>
-    					</div>
-    				</div>
-          </div>
-    		</div>
-    	</div>
-    </section>
+	  <section class="ftco-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+			  <h2 class="mb-3">What Our Software Can Do For You</h2>
+			  <p>Discover the transformative power of our software solutions designed to streamline your operations and elevate your digital presence. Whether you're enhancing user experience, developing cutting-edge applications, or creating visually stunning designs, our software delivers unmatched performance and versatility.</p>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-lg-6 py-5 d-flex align-items-center">
+			  <img src="{{ url_for('static', filename='images/undraw_referral_4ki4.svg') }}" class="img-fluid" alt="Illustration of software capabilities">
+			</div>
+			<div class="col-lg-6 py-5">
+			  <div class="row">
+				<div class="col-md-12 ftco-animate d-flex">
+				  <div class="media block-6 services border d-flex p-3 mb-3">
+					<div class="icon icon-2 d-flex align-items-center justify-content-center">
+					  <span class="flaticon-cloud-computing"></span>
+					</div>
+					<div class="media-body pl-4">
+					  <h3 class="heading">Responsive Design</h3>
+					  <p class="mb-0">Our responsive design ensures that your website or application looks and functions flawlessly across all devices. From smartphones to desktops, we deliver a seamless user experience tailored to every screen size.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-12 ftco-animate d-flex">
+				  <div class="media block-6 services border d-flex p-3 mb-3">
+					<div class="icon icon-2 d-flex align-items-center justify-content-center">
+					  <span class="flaticon-android"></span>
+					</div>
+					<div class="media-body pl-4">
+					  <h3 class="heading">Android Apps Development</h3>
+					  <p class="mb-0">Unlock the potential of mobile technology with our custom Android app development services. We build intuitive and feature-rich apps that cater to your business needs, ensuring a smooth and engaging user experience.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-12 ftco-animate d-flex">
+				  <div class="media block-6 services border d-flex p-3 mb-3">
+					<div class="icon icon-2 d-flex align-items-center justify-content-center">
+					  <span class="flaticon-ios"></span>
+					</div>
+					<div class="media-body pl-4">
+					  <h3 class="heading">iOS Apps Development</h3>
+					  <p class="mb-0">Experience top-notch iOS app development with our team of experts. We create high-performance apps for iPhones and iPads that offer exceptional usability and integrate seamlessly with the Apple ecosystem.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-12 ftco-animate d-flex">
+				  <div class="media block-6 services border d-flex p-3 mb-3">
+					<div class="icon icon-2 d-flex align-items-center justify-content-center">
+					  <span class="flaticon-ux-ui"></span>
+					</div>
+					<div class="media-body pl-4">
+					  <h3 class="heading">UX/UI Design</h3>
+					  <p class="mb-0">Elevate your digital interfaces with our expert UX/UI design services. We focus on creating user-centered designs that are both visually appealing and highly functional, ensuring a satisfying experience for your users.</p>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-12 ftco-animate d-flex">
+				  <div class="media block-6 services border d-flex p-3 mb-3">
+					<div class="icon icon-2 d-flex align-items-center justify-content-center">
+					  <span class="flaticon-print"></span>
+					</div>
+					<div class="media-body pl-4">
+					  <h3 class="heading">Print Ready Design</h3>
+					  <p class="mb-0">From brochures to business cards, our print-ready design services ensure that your materials are professionally crafted and ready for high-quality printing. Make a lasting impression with designs that stand out.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
     <section class="ftco-section ftco-counter img" id="section-counter">
     	<div class="container pb-md-5">
@@ -302,343 +340,343 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-no-pb bg-light ftco-faqs">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-lg-6">
-	    				<div class="img img-faqs mb-4 mb-sm-0" style="background-image: url('{{ url_for('static', filename='images/about-2.jpg') }}'">
-	    				</div>
-    			</div>
-    			<div class="col-lg-6 pl-lg-5">
-    				<div class="heading-section mb-5 mt-5 mt-lg-0">
-    					<!-- <span class="subheading">FAQs</span> -->
-	            <h2 class="mb-3">Frequently Asks Questions</h2>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-    				</div>
-    				<div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
-						  <div class="card">
-						    <div class="card-header p-0" id="headingOne">
-						      <h2 class="mb-0">
-						        <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-						        	<p class="mb-0">How to Make an Account?</p>
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
-						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
-						      </div>
-						    </div>
-						  </div>
+	<section class="ftco-section ftco-no-pb bg-light ftco-faqs">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="img img-faqs mb-4 mb-sm-0" style="background-image: url('{{ url_for('static', filename='images/about-2.jpg') }}')">
+			  </div>
+			</div>
+			<div class="col-lg-6 pl-lg-5">
+			  <div class="heading-section mb-5 mt-5 mt-lg-0">
+				<!-- <span class="subheading">FAQs</span> -->
+				<h2 class="mb-3">Frequently Asked Questions</h2>
+				<p>We understand that you might have questions about our services and how they can benefit you. Below are some common queries and their answers to help you get the most out of our offerings.</p>
+			  </div>
+			  <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+				<div class="card">
+				  <div class="card-header p-0" id="headingOne">
+					<h2 class="mb-0">
+					  <button href="#collapseOne" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+						<p class="mb-0">How to Create an Account?</p>
+						<i class="fa" aria-hidden="true"></i>
+					  </button>
+					</h2>
+				  </div>
+				  <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+					<div class="card-body py-3 px-0">
+					  <ol>
+						<li>Visit our registration page and fill out the required information, including your name, email address, and a secure password.</li>
+						<li>Verify your email by clicking the confirmation link sent to your inbox.</li>
+						<li>Log in to your new account and complete your profile by adding additional details as needed.</li>
+						<li>If you encounter any issues, please contact our support team for assistance.</li>
+					  </ol>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="card">
+				  <div class="card-header p-0" id="headingTwo" role="tab">
+					<h2 class="mb-0">
+					  <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+						<p class="mb-0">How to Manage Your Dashboard?</p>
+						<i class="fa" aria-hidden="true"></i>
+					  </button>
+					</h2>
+				  </div>
+				  <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="card-body py-3 px-0">
+					  <ol>
+						<li>Log in to your account and navigate to the dashboard from the main menu.</li>
+						<li>Use the various widgets and tools available to monitor your performance metrics, track progress, and manage settings.</li>
+						<li>Customize your dashboard layout by dragging and dropping widgets according to your preferences.</li>
+						<li>For detailed guidance, check out our dashboard user manual or contact our support team.</li>
+					  </ol>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="card">
+				  <div class="card-header p-0" id="headingThree" role="tab">
+					<h2 class="mb-0">
+					  <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+						<p class="mb-0">How to Grow Your Investment Funds?</p>
+						<i class="fa" aria-hidden="true"></i>
+					  </button>
+					</h2>
+				  </div>
+				  <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingThree">
+					<div class="card-body py-3 px-0">
+					  <ol>
+						<li>Begin by setting clear financial goals and choosing an investment strategy that aligns with your risk tolerance.</li>
+						<li>Consider diversifying your investments across different asset classes to mitigate risk.</li>
+						<li>Regularly review your investment portfolio and adjust as needed based on market conditions and performance.</li>
+						<li>Seek advice from financial experts if needed, and stay informed about market trends and opportunities.</li>
+					  </ol>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="card">
+				  <div class="card-header p-0" id="headingFour" role="tab">
+					<h2 class="mb-0">
+					  <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
+						<p class="mb-0">What Are the Requirements for Businesses?</p>
+						<i class="fa" aria-hidden="true"></i>
+					  </button>
+					</h2>
+				  </div>
+				  <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingFour">
+					<div class="card-body py-3 px-0">
+					  <p>To get started with our services, businesses need to provide basic company information, including business registration details, industry sector, and contact information. Additionally, depending on the services required, businesses might need to provide specific documentation or comply with certain industry standards. For a detailed list of requirements, please consult our business onboarding guide or reach out to our support team for personalized assistance.</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
-						  <div class="card">
-						    <div class="card-header p-0" id="headingTwo" role="tab">
-						      <h2 class="mb-0">
-						        <button href="#collapseTwo" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-						        	<p class="mb-0">How to manage your Dashboard?</p>
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
-						      </div>
-						    </div>
-						  </div>
-
-						  <div class="card">
-						    <div class="card-header p-0" id="headingThree" role="tab">
-						      <h2 class="mb-0">
-						        <button href="#collapseThree" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-						        	<p class="mb-0">How to grow your investments funds?</p>
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="card-body py-3 px-0">
-						      	<ol>
-						      		<li>Far far away, behind the word mountains</li>
-						      		<li>Consonantia, there live the blind texts</li>
-						      		<li>When she reached the first hills of the Italic Mountains</li>
-						      		<li>Bookmarksgrove, the headline of Alphabet Village</li>
-						      		<li>Separated they live in Bookmarksgrove right</li>
-						      	</ol>
-						      </div>
-						    </div>
-						  </div>
-
-						  <div class="card">
-						    <div class="card-header p-0" id="headingFour" role="tab">
-						      <h2 class="mb-0">
-						        <button href="#collapseFour" class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link" data-parent="#accordion" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour">
-						        	<p class="mb-0">What are those requirements for businesses?</p>
-						          <i class="fa" aria-hidden="true"></i>
-						        </button>
-						      </h2>
-						    </div>
-						    <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
-						      <div class="card-body py-3 px-0">
-						      	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						      </div>
-						    </div>
-						  </div>
+	  <section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-4">Our Best Pricing</h2>
+					<p>Choose the perfect plan that fits your needs. Whether you're just starting out or are an experienced user, we have something for everyone. Enjoy unparalleled service and the best features in the industry!</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-lg-3 col-md-6 ftco-animate">
+					<div class="block-7">
+						<div class="text-center">
+							<h2 class="heading">Basic Plan</h2>
+							<span class="price"><sup>$</sup> <span class="number">0<small class="per">/mo</small></span></span>
+							<span class="excerpt d-block">100% Free. Forever</span>
+							<h3 class="heading-2 mb-3">Enjoy All The Essential Features</h3>
+							<p class="description mb-4">Ideal for individuals and small projects. Get started with zero cost and access to fundamental tools and features that will get you up and running.</p>
+							<ul class="pricing-text mb-4">
+								<li><strong>150 GB</strong> Bandwidth</li>
+								<li><strong>100 GB</strong> Storage</li>
+								<li><strong>$1.00 / GB</strong> Overages</li>
+								<li>All Basic Features</li>
+							</ul>
+							<a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
 						</div>
-	        </div>
-        </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section bg-light">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-4">Our Best Pricing</h2>
-          </div>
-        </div>
-    		<div class="row d-flex">
-	        <div class="col-lg-3 col-md-6 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-		            <h2 class="heading">Basic Plan</h2>
-		            <span class="price"><sup>$</sup> <span class="number">0<small class="per">/mo</small></span>
-		            <span class="excerpt d-block">100% free. Forever</span>
-		            <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
-		            
-		            <ul class="pricing-text mb-4">
-		              <li><strong>150 GB</strong> Bandwidth</li>
-		              <li><strong>100 GB</strong> Storage</li>
-		              <li><strong>$1.00 / GB</strong> Overages</li>
-		              <li>All features</li>
-		            </ul>
-		            <a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-lg-3 col-md-6 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-		            <h2 class="heading">Advance Plan</h2>
-		            <span class="price"><sup>$</sup> <span class="number">19<small class="per">/mo</small></span></span>
-		            <span class="excerpt d-block">All features are included</span>
-		            <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
-		            
-		            <ul class="pricing-text mb-4">
-		              <li><strong>450 GB</strong> Bandwidth</li>
-		              <li><strong>400 GB</strong> Storage</li>
-		              <li><strong>$2.00 / GB</strong> Overages</li>
-		              <li>All features</li>
-		            </ul>
-		            <a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-lg-3 col-md-6 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-		            <h2 class="heading">Expert Plan</h2>
-		            <span class="price"><sup>$</sup> <span class="number">49<small class="per">/mo</small></span></span>
-		            <span class="excerpt d-block">All features are included</span>
-		            <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
-		            
-		            <ul class="pricing-text mb-4">
-		              <li><strong>250 GB</strong> Bandwidth</li>
-		              <li><strong>200 GB</strong> Storage</li>
-		              <li><strong>$5.00 / GB</strong> Overages</li>
-		              <li>All features</li>
-		            </ul>
-		            <a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-lg-3 col-md-6 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-		            <h2 class="heading">Pro Plan</h2>
-		            <span class="price"><sup>$</sup> <span class="number">99<small class="per">/mo</small></span></span>
-		            <span class="excerpt d-block">All features are included</span>
-		            <h3 class="heading-2 mb-3">Enjoy All The Features</h3>
-		            
-		            <ul class="pricing-text mb-4">
-		              <li><strong>450 GB</strong> Bandwidth</li>
-		              <li><strong>400 GB</strong> Storage</li>
-		              <li><strong>$20.00 / GB</strong> Overages</li>
-		              <li>All features</li>
-		            </ul>
-			          <a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-4">What Users Saying</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row ftco-animate justify-content-center">
-          <div class="col-md-10">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_1.jpg') }}');">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_2.jpg') }}');">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_2.jpg') }}');">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_1.jpg') }}');">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_1.jpg') }}');">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Mark Web</p>
-                    <span class="position">System Analyst</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2>Recent Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_1.jpg') }}');">
-              </a>
-              <div class="text d-flex py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">May 17, 2020</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Everthing You Need to Know About Cloud Template</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="100">
-				<a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_2.jpg') }}');">
-					<!-- Content inside the anchor tag -->
-				</a>
-              <div class="text d-flex py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">May 17, 2020</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Everthing You Need to Know About Cloud Template</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry" data-aos-delay="200">
-				<a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_3.jpg') }}');">
-					<!-- Content inside the anchor tag -->
-				</a>
-							 
-              <div class="text d-flex py-4">
-                <div class="meta mb-3">
-                  <div><a href="#">May 17, 2020</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <div class="desc pl-3">
-	                <h3 class="heading"><a href="#">Everthing You Need to Know About Cloud Template</a></h3>
-	              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 ftco-animate">
+					<div class="block-7">
+						<div class="text-center">
+							<h2 class="heading">Advance Plan</h2>
+							<span class="price"><sup>$</sup> <span class="number">19<small class="per">/mo</small></span></span>
+							<span class="excerpt d-block">Perfect for growing businesses</span>
+							<h3 class="heading-2 mb-3">Access to Enhanced Features</h3>
+							<p class="description mb-4">This plan is designed for small to medium-sized businesses. Enjoy increased bandwidth and storage with enhanced support to help you scale your operations smoothly.</p>
+							<ul class="pricing-text mb-4">
+								<li><strong>450 GB</strong> Bandwidth</li>
+								<li><strong>400 GB</strong> Storage</li>
+								<li><strong>$2.00 / GB</strong> Overages</li>
+								<li>All Advanced Features</li>
+							</ul>
+							<a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 ftco-animate">
+					<div class="block-7">
+						<div class="text-center">
+							<h2 class="heading">Expert Plan</h2>
+							<span class="price"><sup>$</sup> <span class="number">49<small class="per">/mo</small></span></span>
+							<span class="excerpt d-block">Ideal for high-demand users</span>
+							<h3 class="heading-2 mb-3">Unlock Premium Features</h3>
+							<p class="description mb-4">Best for high-traffic websites and businesses that need extra resources. Benefit from top-tier support and advanced features tailored for expert users.</p>
+							<ul class="pricing-text mb-4">
+								<li><strong>250 GB</strong> Bandwidth</li>
+								<li><strong>200 GB</strong> Storage</li>
+								<li><strong>$5.00 / GB</strong> Overages</li>
+								<li>All Expert Features</li>
+							</ul>
+							<a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 ftco-animate">
+					<div class="block-7">
+						<div class="text-center">
+							<h2 class="heading">Pro Plan</h2>
+							<span class="price"><sup>$</sup> <span class="number">99<small class="per">/mo</small></span></span>
+							<span class="excerpt d-block">For the ultimate experience</span>
+							<h3 class="heading-2 mb-3">Experience Top-Notch Features</h3>
+							<p class="description mb-4">Our most comprehensive plan for enterprises and high-demand users. Enjoy the highest limits and premium support to ensure your operations run without a hitch.</p>
+							<ul class="pricing-text mb-4">
+								<li><strong>450 GB</strong> Bandwidth</li>
+								<li><strong>400 GB</strong> Storage</li>
+								<li><strong>$20.00 / GB</strong> Overages</li>
+								<li>All Pro Features</li>
+							</ul>
+							<a href="#" class="btn btn-tertiary d-block px-3 py-3 mb-4">Choose Plan</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ftco-section testimony-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-4">What Our Users Are Saying</h2>
+					<p>Discover how our users have benefited from our services. Read their stories and see how we’ve made a difference in their professional lives.</p>
+				</div>
+			</div>
+			<div class="row ftco-animate justify-content-center">
+				<div class="col-md-10">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_1.jpg') }}');">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text">
+									<p class="mb-4">“The services provided have exceeded our expectations. The support team is always available, and the features are top-notch. We’ve seen a significant improvement in our productivity and efficiency.”</p>
+									<p class="name">Anna Johnson</p>
+									<span class="position">Marketing Director</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_2.jpg') }}');">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text">
+									<p class="mb-4">“Fantastic service! The seamless integration and user-friendly interface have made it incredibly easy for us to manage our projects. Highly recommended for any business looking for reliable solutions.”</p>
+									<p class="name">Michael Smith</p>
+									<span class="position">UI/UX Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_3.jpg') }}');">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text">
+									<p class="mb-4">“We’ve been using the service for several months now, and the experience has been nothing short of excellent. The features are comprehensive, and the customer support is top-tier.”</p>
+									<p class="name">Emily Davis</p>
+									<span class="position">Product Manager</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_4.jpg') }}');">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text">
+									<p class="mb-4">“Excellent platform with a robust set of tools. It has been instrumental in streamlining our processes and boosting team collaboration. We’re very satisfied with the overall experience.”</p>
+									<p class="name">James Wilson</p>
+									<span class="position">Software Engineer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap d-flex">
+								<div class="user-img mb-4" style="background-image: url('{{ url_for('static', filename='images/person_5.jpg') }}');">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text">
+									<p class="mb-4">“The platform has greatly enhanced our workflow and efficiency. The customer support is incredibly responsive and helpful, making the overall experience outstanding.”</p>
+									<p class="name">Sophia Brown</p>
+									<span class="position">System Analyst</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2>Recent Blog Posts</h2>
+					<p>Stay up to date with our latest insights and updates. Explore our recent blog posts to learn more about industry trends, tips, and news.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 ftco-animate">
+					<div class="blog-entry">
+						<a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_1.jpg') }}');">
+							<!-- Image is set as background -->
+						</a>
+						<div class="text d-flex py-4">
+							<div class="meta mb-3">
+								<div><a href="#">September 20, 2024</a></div>
+								<div><a href="#">Jane Doe</a></div>
+								<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 5</a></div>
+							</div>
+							<div class="desc pl-3">
+								<h3 class="heading"><a href="#">The Ultimate Guide to Cloud Technology</a></h3>
+								<p>Discover the essentials of cloud technology and how it can benefit your business. This guide covers everything from the basics to advanced strategies.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="blog-entry" data-aos-delay="100">
+						<a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_2.jpg') }}');">
+							<!-- Image is set as background -->
+						</a>
+						<div class="text d-flex py-4">
+							<div class="meta mb-3">
+								<div><a href="#">September 15, 2024</a></div>
+								<div><a href="#">John Smith</a></div>
+								<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 8</a></div>
+							</div>
+							<div class="desc pl-3">
+								<h3 class="heading"><a href="#">Top 10 Tips for Effective SEO</a></h3>
+								<p>Enhance your website’s visibility with our top tips for SEO. Learn the latest strategies to improve your search engine ranking and attract more visitors.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="blog-entry" data-aos-delay="200">
+						<a href="blog-single.html" class="block-20" style="background-image: url('{{ url_for('static', filename='images/image_3.jpg') }}');">
+							<!-- Image is set as background -->
+						</a>
+						<div class="text d-flex py-4">
+							<div class="meta mb-3">
+								<div><a href="#">September 10, 2024</a></div>
+								<div><a href="#">Emily Davis</a></div>
+								<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 12</a></div>
+							</div>
+							<div class="desc pl-3">
+								<h3 class="heading"><a href="#">How to Build a Successful Marketing Strategy</a></h3>
+								<p>Learn how to create a marketing strategy that delivers results. From planning to execution, this post provides actionable tips to help your business grow.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
